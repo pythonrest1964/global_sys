@@ -1,0 +1,16 @@
+body{
+background-image:url('http://registration.csc.gov.in/CADRegistration/user/assets/img/backgrounds/1@2x.jpg');
+background-repeat:no-repeat;
+background-size:cover;
+}
+h3{
+color:red;
+}
+img{
+border-radius:50%;
+}
+a{
+color:red;
+font-family:tahoma;
+font-size:25px;
+}

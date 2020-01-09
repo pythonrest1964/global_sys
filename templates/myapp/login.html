@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="{% static 'css/myfile.css'%}" rel="stylesheet">
+
+</head>
+<body style="background-image:url('https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <br><br><br>
+            <img src="{% static 'images/vinay.jpg'%}" width="80%" height="80%" >
+        </div>
+
+        <div class="col-md-6">
+            <br><br><br><br><br>
+            <form method="POST">
+                <h3>LoginForm</h3>
+                {% csrf_token %}
+                {{lform}}<br>
+                <center>
+                <input type="submit" value="Submit" class="btn btn-success">
+                <input type="reset" value="Clear" class="btn btn-danger"><br><br>
+                    <a href="/reg/">Click here to Register</a>
+                </center>
+
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

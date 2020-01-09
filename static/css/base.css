@@ -1,0 +1,41 @@
+body{
+background-color:#e6e6e6;
+}
+ul{
+float:right;
+margin-top:10px;
+}
+.cls1{
+text-align:center;
+background-color:#474241;
+color:white;
+}
+ul li{
+list-style-type:none;
+display:inline-block;
+}
+ul li a{
+text-decoration:none;
+border:2px blue solid;
+padding:5px 20px;
+margin-right:40px;
+font-size:20px;
+background-color:mediumorchid;
+color:white;
+}
+ul li a:hover{
+background-color:red;
+color:black;
+border-radius:20px;
+}
+footer{
+position:fixed;
+width:100%;
+bottom:0;
+text-align:center;
+color:white;
+}
+header{
+background-color:red;
+color:white;
+}
